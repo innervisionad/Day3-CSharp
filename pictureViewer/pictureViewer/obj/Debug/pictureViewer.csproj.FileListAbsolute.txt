@@ -1,0 +1,9 @@
+C:\Users\Adam\Documents\GitHub\Day3-CSharp\pictureViewer\pictureViewer\bin\Debug\pictureViewer.exe.config
+C:\Users\Adam\Documents\GitHub\Day3-CSharp\pictureViewer\pictureViewer\bin\Debug\pictureViewer.exe
+C:\Users\Adam\Documents\GitHub\Day3-CSharp\pictureViewer\pictureViewer\bin\Debug\pictureViewer.pdb
+C:\Users\Adam\Documents\GitHub\Day3-CSharp\pictureViewer\pictureViewer\obj\Debug\pictureViewer.csprojResolveAssemblyReference.cache
+C:\Users\Adam\Documents\GitHub\Day3-CSharp\pictureViewer\pictureViewer\obj\Debug\pictureViewer.Properties.Resources.resources
+C:\Users\Adam\Documents\GitHub\Day3-CSharp\pictureViewer\pictureViewer\obj\Debug\pictureViewer.csproj.GenerateResource.Cache
+C:\Users\Adam\Documents\GitHub\Day3-CSharp\pictureViewer\pictureViewer\obj\Debug\pictureViewer.exe
+C:\Users\Adam\Documents\GitHub\Day3-CSharp\pictureViewer\pictureViewer\obj\Debug\pictureViewer.pdb
+C:\Users\Adam\Documents\GitHub\Day3-CSharp\pictureViewer\pictureViewer\obj\Debug\pictureViewer.Form1.resources

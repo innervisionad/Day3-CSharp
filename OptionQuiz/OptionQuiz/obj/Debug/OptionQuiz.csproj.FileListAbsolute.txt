@@ -1,0 +1,9 @@
+C:\Users\student\Documents\GitHub\Day3-CSharp\OptionQuiz\OptionQuiz\bin\Debug\OptionQuiz.exe.config
+C:\Users\student\Documents\GitHub\Day3-CSharp\OptionQuiz\OptionQuiz\bin\Debug\OptionQuiz.exe
+C:\Users\student\Documents\GitHub\Day3-CSharp\OptionQuiz\OptionQuiz\bin\Debug\OptionQuiz.pdb
+C:\Users\student\Documents\GitHub\Day3-CSharp\OptionQuiz\OptionQuiz\obj\Debug\OptionQuiz.csprojResolveAssemblyReference.cache
+C:\Users\student\Documents\GitHub\Day3-CSharp\OptionQuiz\OptionQuiz\obj\Debug\OptionQuiz.Form1.resources
+C:\Users\student\Documents\GitHub\Day3-CSharp\OptionQuiz\OptionQuiz\obj\Debug\OptionQuiz.Properties.Resources.resources
+C:\Users\student\Documents\GitHub\Day3-CSharp\OptionQuiz\OptionQuiz\obj\Debug\OptionQuiz.csproj.GenerateResource.Cache
+C:\Users\student\Documents\GitHub\Day3-CSharp\OptionQuiz\OptionQuiz\obj\Debug\OptionQuiz.exe
+C:\Users\student\Documents\GitHub\Day3-CSharp\OptionQuiz\OptionQuiz\obj\Debug\OptionQuiz.pdb

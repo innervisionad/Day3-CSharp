@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -38,23 +39,24 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.radioButton6 = new System.Windows.Forms.RadioButton();
-            this.radioButton7 = new System.Windows.Forms.RadioButton();
-            this.radioButton8 = new System.Windows.Forms.RadioButton();
-            this.radioButton9 = new System.Windows.Forms.RadioButton();
+            this.question1Option3 = new System.Windows.Forms.RadioButton();
+            this.question1Option2 = new System.Windows.Forms.RadioButton();
+            this.question1Option1 = new System.Windows.Forms.RadioButton();
+            this.question2Option3 = new System.Windows.Forms.RadioButton();
+            this.question2Option2 = new System.Windows.Forms.RadioButton();
+            this.question2Option1 = new System.Windows.Forms.RadioButton();
+            this.question3Option3 = new System.Windows.Forms.RadioButton();
+            this.question3Option2 = new System.Windows.Forms.RadioButton();
+            this.question3Option1 = new System.Windows.Forms.RadioButton();
             this.label4 = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.startButton = new System.Windows.Forms.Button();
+            this.closeButton = new System.Windows.Forms.Button();
+            this.timerWindow = new System.Windows.Forms.Label();
+            this.question1Feedback = new System.Windows.Forms.Label();
+            this.question2Feedback = new System.Windows.Forms.Label();
+            this.question3Feedback = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -79,10 +81,10 @@
             this.tableLayoutPanel1.Controls.Add(this.groupBox3, 1, 3);
             this.tableLayoutPanel1.Controls.Add(this.label4, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 1, 4);
-            this.tableLayoutPanel1.Controls.Add(this.label5, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label6, 2, 1);
-            this.tableLayoutPanel1.Controls.Add(this.label7, 2, 2);
-            this.tableLayoutPanel1.Controls.Add(this.label8, 2, 3);
+            this.tableLayoutPanel1.Controls.Add(this.timerWindow, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.question1Feedback, 2, 1);
+            this.tableLayoutPanel1.Controls.Add(this.question2Feedback, 2, 2);
+            this.tableLayoutPanel1.Controls.Add(this.question3Feedback, 2, 3);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -130,23 +132,24 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.radioButton3);
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Controls.Add(this.radioButton1);
+            this.groupBox1.Controls.Add(this.question1Option1);
+            this.groupBox1.Controls.Add(this.question1Option2);
+            this.groupBox1.Controls.Add(this.question1Option3);
             this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Cursor = System.Windows.Forms.Cursors.Default;
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox1.Location = new System.Drawing.Point(159, 76);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(307, 140);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.radioButton6);
-            this.groupBox2.Controls.Add(this.radioButton5);
-            this.groupBox2.Controls.Add(this.radioButton4);
+            this.groupBox2.Controls.Add(this.question2Option1);
+            this.groupBox2.Controls.Add(this.question2Option2);
+            this.groupBox2.Controls.Add(this.question2Option3);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox2.Location = new System.Drawing.Point(159, 222);
@@ -154,13 +157,12 @@
             this.groupBox2.Size = new System.Drawing.Size(307, 140);
             this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "groupBox2";
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.radioButton9);
-            this.groupBox3.Controls.Add(this.radioButton8);
-            this.groupBox3.Controls.Add(this.radioButton7);
+            this.groupBox3.Controls.Add(this.question3Option1);
+            this.groupBox3.Controls.Add(this.question3Option2);
+            this.groupBox3.Controls.Add(this.question3Option3);
             this.groupBox3.Controls.Add(this.label3);
             this.groupBox3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox3.Location = new System.Drawing.Point(159, 368);
@@ -168,133 +170,132 @@
             this.groupBox3.Size = new System.Drawing.Size(307, 140);
             this.groupBox3.TabIndex = 5;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "groupBox3";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(7, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.Size = new System.Drawing.Size(58, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
+            this.label1.Text = "Question 1";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(7, 20);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.Size = new System.Drawing.Size(58, 13);
             this.label2.TabIndex = 0;
-            this.label2.Text = "label2";
+            this.label2.Text = "Question 2";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(7, 20);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
+            this.label3.Size = new System.Drawing.Size(58, 13);
             this.label3.TabIndex = 0;
-            this.label3.Text = "label3";
+            this.label3.Text = "Question 3";
             // 
-            // radioButton1
+            // question1Option3
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(47, 117);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(85, 17);
-            this.radioButton1.TabIndex = 1;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "radioButton1";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.question1Option3.AutoSize = true;
+            this.question1Option3.Location = new System.Drawing.Point(47, 117);
+            this.question1Option3.Name = "question1Option3";
+            this.question1Option3.Size = new System.Drawing.Size(85, 17);
+            this.question1Option3.TabIndex = 1;
+            this.question1Option3.TabStop = true;
+            this.question1Option3.Text = "radioButton1";
+            this.question1Option3.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // question1Option2
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(47, 94);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(85, 17);
-            this.radioButton2.TabIndex = 2;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "radioButton2";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.question1Option2.AutoSize = true;
+            this.question1Option2.Location = new System.Drawing.Point(47, 94);
+            this.question1Option2.Name = "question1Option2";
+            this.question1Option2.Size = new System.Drawing.Size(85, 17);
+            this.question1Option2.TabIndex = 2;
+            this.question1Option2.TabStop = true;
+            this.question1Option2.Text = "radioButton2";
+            this.question1Option2.UseVisualStyleBackColor = true;
             // 
-            // radioButton3
+            // question1Option1
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(47, 71);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(85, 17);
-            this.radioButton3.TabIndex = 3;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "radioButton3";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.question1Option1.AutoSize = true;
+            this.question1Option1.Location = new System.Drawing.Point(47, 71);
+            this.question1Option1.Name = "question1Option1";
+            this.question1Option1.Size = new System.Drawing.Size(85, 17);
+            this.question1Option1.TabIndex = 3;
+            this.question1Option1.TabStop = true;
+            this.question1Option1.Text = "radioButton3";
+            this.question1Option1.UseVisualStyleBackColor = true;
             // 
-            // radioButton4
+            // question2Option3
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(47, 117);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(85, 17);
-            this.radioButton4.TabIndex = 1;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "radioButton4";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.question2Option3.AutoSize = true;
+            this.question2Option3.Location = new System.Drawing.Point(47, 117);
+            this.question2Option3.Name = "question2Option3";
+            this.question2Option3.Size = new System.Drawing.Size(85, 17);
+            this.question2Option3.TabIndex = 1;
+            this.question2Option3.TabStop = true;
+            this.question2Option3.Text = "radioButton4";
+            this.question2Option3.UseVisualStyleBackColor = true;
             // 
-            // radioButton5
+            // question2Option2
             // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Location = new System.Drawing.Point(47, 94);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(85, 17);
-            this.radioButton5.TabIndex = 2;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "radioButton5";
-            this.radioButton5.UseVisualStyleBackColor = true;
+            this.question2Option2.AutoSize = true;
+            this.question2Option2.Location = new System.Drawing.Point(47, 94);
+            this.question2Option2.Name = "question2Option2";
+            this.question2Option2.Size = new System.Drawing.Size(85, 17);
+            this.question2Option2.TabIndex = 2;
+            this.question2Option2.TabStop = true;
+            this.question2Option2.Text = "radioButton5";
+            this.question2Option2.UseVisualStyleBackColor = true;
             // 
-            // radioButton6
+            // question2Option1
             // 
-            this.radioButton6.AutoSize = true;
-            this.radioButton6.Location = new System.Drawing.Point(47, 71);
-            this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(85, 17);
-            this.radioButton6.TabIndex = 3;
-            this.radioButton6.TabStop = true;
-            this.radioButton6.Text = "radioButton6";
-            this.radioButton6.UseVisualStyleBackColor = true;
+            this.question2Option1.AutoSize = true;
+            this.question2Option1.Location = new System.Drawing.Point(47, 71);
+            this.question2Option1.Name = "question2Option1";
+            this.question2Option1.Size = new System.Drawing.Size(85, 17);
+            this.question2Option1.TabIndex = 3;
+            this.question2Option1.TabStop = true;
+            this.question2Option1.Text = "radioButton6";
+            this.question2Option1.UseVisualStyleBackColor = true;
             // 
-            // radioButton7
+            // question3Option3
             // 
-            this.radioButton7.AutoSize = true;
-            this.radioButton7.Location = new System.Drawing.Point(47, 122);
-            this.radioButton7.Name = "radioButton7";
-            this.radioButton7.Size = new System.Drawing.Size(85, 17);
-            this.radioButton7.TabIndex = 1;
-            this.radioButton7.TabStop = true;
-            this.radioButton7.Text = "radioButton7";
-            this.radioButton7.UseVisualStyleBackColor = true;
+            this.question3Option3.AutoSize = true;
+            this.question3Option3.Location = new System.Drawing.Point(47, 122);
+            this.question3Option3.Name = "question3Option3";
+            this.question3Option3.Size = new System.Drawing.Size(85, 17);
+            this.question3Option3.TabIndex = 1;
+            this.question3Option3.TabStop = true;
+            this.question3Option3.Text = "radioButton7";
+            this.question3Option3.UseVisualStyleBackColor = true;
             // 
-            // radioButton8
+            // question3Option2
             // 
-            this.radioButton8.AutoSize = true;
-            this.radioButton8.Location = new System.Drawing.Point(47, 99);
-            this.radioButton8.Name = "radioButton8";
-            this.radioButton8.Size = new System.Drawing.Size(85, 17);
-            this.radioButton8.TabIndex = 2;
-            this.radioButton8.TabStop = true;
-            this.radioButton8.Text = "radioButton8";
-            this.radioButton8.UseVisualStyleBackColor = true;
+            this.question3Option2.AutoSize = true;
+            this.question3Option2.Location = new System.Drawing.Point(47, 99);
+            this.question3Option2.Name = "question3Option2";
+            this.question3Option2.Size = new System.Drawing.Size(85, 17);
+            this.question3Option2.TabIndex = 2;
+            this.question3Option2.TabStop = true;
+            this.question3Option2.Text = "radioButton8";
+            this.question3Option2.UseVisualStyleBackColor = true;
             // 
-            // radioButton9
+            // question3Option1
             // 
-            this.radioButton9.AutoSize = true;
-            this.radioButton9.Location = new System.Drawing.Point(47, 76);
-            this.radioButton9.Name = "radioButton9";
-            this.radioButton9.Size = new System.Drawing.Size(85, 17);
-            this.radioButton9.TabIndex = 3;
-            this.radioButton9.TabStop = true;
-            this.radioButton9.Text = "radioButton9";
-            this.radioButton9.UseVisualStyleBackColor = true;
+            this.question3Option1.AutoSize = true;
+            this.question3Option1.Location = new System.Drawing.Point(47, 76);
+            this.question3Option1.Name = "question3Option1";
+            this.question3Option1.Size = new System.Drawing.Size(85, 17);
+            this.question3Option1.TabIndex = 3;
+            this.question3Option1.TabStop = true;
+            this.question3Option1.Text = "radioButton9";
+            this.question3Option1.UseVisualStyleBackColor = true;
             // 
             // label4
             // 
@@ -312,8 +313,8 @@
             this.tableLayoutPanel2.ColumnCount = 2;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Controls.Add(this.button1, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.button2, 1, 0);
+            this.tableLayoutPanel2.Controls.Add(this.startButton, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.closeButton, 1, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(159, 514);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -322,67 +323,67 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(307, 69);
             this.tableLayoutPanel2.TabIndex = 7;
             // 
-            // button1
+            // startButton
             // 
-            this.button1.AutoSize = true;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button1.Location = new System.Drawing.Point(3, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(147, 63);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.startButton.AutoSize = true;
+            this.startButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.startButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.startButton.Location = new System.Drawing.Point(3, 3);
+            this.startButton.Name = "startButton";
+            this.startButton.Size = new System.Drawing.Size(147, 63);
+            this.startButton.TabIndex = 0;
+            this.startButton.Text = "button1";
+            this.startButton.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // closeButton
             // 
-            this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button2.Location = new System.Drawing.Point(156, 3);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(148, 63);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.closeButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.closeButton.Location = new System.Drawing.Point(156, 3);
+            this.closeButton.Name = "closeButton";
+            this.closeButton.Size = new System.Drawing.Size(148, 63);
+            this.closeButton.TabIndex = 1;
+            this.closeButton.Text = "button2";
+            this.closeButton.UseVisualStyleBackColor = true;
             // 
-            // label5
+            // timerWindow
             // 
-            this.label5.AutoSize = true;
-            this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label5.Location = new System.Drawing.Point(472, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(151, 73);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "label5";
+            this.timerWindow.AutoSize = true;
+            this.timerWindow.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.timerWindow.Location = new System.Drawing.Point(472, 0);
+            this.timerWindow.Name = "timerWindow";
+            this.timerWindow.Size = new System.Drawing.Size(151, 73);
+            this.timerWindow.TabIndex = 8;
+            this.timerWindow.Text = "label5";
             // 
-            // label6
+            // question1Feedback
             // 
-            this.label6.AutoSize = true;
-            this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label6.Location = new System.Drawing.Point(472, 73);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(151, 146);
-            this.label6.TabIndex = 9;
-            this.label6.Text = "label6";
+            this.question1Feedback.AutoSize = true;
+            this.question1Feedback.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.question1Feedback.Location = new System.Drawing.Point(472, 73);
+            this.question1Feedback.Name = "question1Feedback";
+            this.question1Feedback.Size = new System.Drawing.Size(151, 146);
+            this.question1Feedback.TabIndex = 9;
+            this.question1Feedback.Text = "label6";
             // 
-            // label7
+            // question2Feedback
             // 
-            this.label7.AutoSize = true;
-            this.label7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label7.Location = new System.Drawing.Point(472, 219);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(151, 146);
-            this.label7.TabIndex = 10;
-            this.label7.Text = "label7";
+            this.question2Feedback.AutoSize = true;
+            this.question2Feedback.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.question2Feedback.Location = new System.Drawing.Point(472, 219);
+            this.question2Feedback.Name = "question2Feedback";
+            this.question2Feedback.Size = new System.Drawing.Size(151, 146);
+            this.question2Feedback.TabIndex = 10;
+            this.question2Feedback.Text = "label7";
             // 
-            // label8
+            // question3Feedback
             // 
-            this.label8.AutoSize = true;
-            this.label8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label8.Location = new System.Drawing.Point(472, 365);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(151, 146);
-            this.label8.TabIndex = 11;
-            this.label8.Text = "label8";
+            this.question3Feedback.AutoSize = true;
+            this.question3Feedback.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.question3Feedback.Location = new System.Drawing.Point(472, 365);
+            this.question3Feedback.Name = "question3Feedback";
+            this.question3Feedback.Size = new System.Drawing.Size(151, 146);
+            this.question3Feedback.TabIndex = 11;
+            this.question3Feedback.Text = "label8";
             // 
             // Form1
             // 
@@ -415,29 +416,30 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton question1Option1;
+        private System.Windows.Forms.RadioButton question1Option2;
+        private System.Windows.Forms.RadioButton question1Option3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.RadioButton radioButton6;
-        private System.Windows.Forms.RadioButton radioButton5;
-        private System.Windows.Forms.RadioButton radioButton4;
+        private System.Windows.Forms.RadioButton question2Option1;
+        private System.Windows.Forms.RadioButton question2Option2;
+        private System.Windows.Forms.RadioButton question2Option3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.RadioButton radioButton9;
-        private System.Windows.Forms.RadioButton radioButton8;
-        private System.Windows.Forms.RadioButton radioButton7;
+        private System.Windows.Forms.RadioButton question3Option1;
+        private System.Windows.Forms.RadioButton question3Option2;
+        private System.Windows.Forms.RadioButton question3Option3;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button startButton;
+        private System.Windows.Forms.Button closeButton;
+        private System.Windows.Forms.Label timerWindow;
+        private System.Windows.Forms.Label question1Feedback;
+        private System.Windows.Forms.Label question2Feedback;
+        private System.Windows.Forms.Label question3Feedback;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 
